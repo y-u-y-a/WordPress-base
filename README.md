@@ -6,8 +6,10 @@
 - 4. WordPress起動
 
 ## 1. プロジェクト名を指定してリポジトリをクローン
-```
+```sh:
 $ git clone https://github.com/y-u-y-a/WordPress-base.git [プロジェクト名]
+$ git remote rm origin
+# $ git remote add [リモートリポジトリのURL]
 ```
 
 ## 2. .env作成
