@@ -1,9 +1,8 @@
 # プロジェクトごとに環境を作成する手順
 ## 目次
 - 1. プロジェクト名を指定してリポジトリをクローン
-- 2. .env作成
-- 3. .envにコンテナ名・DB名を任意で編集
-- 4. WordPress起動
+- 2. .env作成・編集
+- 3. WordPress起動
 
 ## 1. プロジェクト名を指定してリポジトリをクローン
 ```sh:
@@ -16,9 +15,13 @@ $ git remote rm origin
 ```sh:
 $ cd [プロジェクト名]
 $ cp .env.example .env
+# .env編集
+MYSQL_CONTAINER_NAME=[MySQLコンテナ名]
+WORDPRESS_CONTAINER_NAME=[サーバーコンテナ名]
+DB_NAME=[データベース名]
 ```
 
-## 4. WordPress起動(localhost:8000)
+## 3. WordPress起動(localhost:8000)
 ```sh:
 $ docker-compose build -d
 ```
