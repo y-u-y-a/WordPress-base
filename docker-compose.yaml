@@ -1,0 +1,45 @@
+version: "3"
+services:
+  mysql:
+    container_name: ${MYSQL_CONTAINER_NAME}
+    build:
+      context: .
+      dockerfile: ./build/mysql/Dockerfile.dev
+    ports:
+      - 4306:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - default
+
+  wordpress:
+    container_name: ${WORDPRESS_CONTAINER_NAME}
+    build:
+      context: .
+      dockerfile: ./build/server/Dockerfile.dev
+    ports:
+      - 8000:80
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_NAME: ${DB_NAME}
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: root
+    depends_on:
+      - mysql
+    networks:
+      - default
+
+
+networks:
+  default:
+    external: false
+# ホスト側にデータを保存
+volumes:
+  mysql-data:

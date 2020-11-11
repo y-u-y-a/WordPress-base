@@ -1,0 +1,11 @@
+.env
+
+# テーマ関係
+wp-content/themes/*
+!wp-content/themes/index.php
+!*.zip
+!*-child/
+!simple/
+
+# アップロードファイル関係
+wp-content/uploads/*
