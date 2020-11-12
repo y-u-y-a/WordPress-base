@@ -4,7 +4,6 @@
 themes/*
 !themes/index.php
 !*.zip
-!*-child/
 !simple/
 
 # アップロードファイル関係
