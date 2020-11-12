@@ -36,5 +36,5 @@ $ git clone [テーマのリポジトリURL]
 
 ## ※テーマ解凍
 ```sh:
-$ unzip ./wp-content/themes/[ファイル名].zip -d ./wp-content/themes/
+$ unzip ./themes/[ファイル名].zip -d ./themes/
 ```

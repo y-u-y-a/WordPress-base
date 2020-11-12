@@ -1,8 +1,8 @@
 .env
 
 # テーマ関係
-wp-content/themes/*
-!wp-content/themes/index.php
+themes/*
+!themes/index.php
 !*.zip
 !*-child/
 !simple/

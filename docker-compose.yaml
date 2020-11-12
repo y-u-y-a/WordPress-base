@@ -25,7 +25,10 @@ services:
     ports:
       - 8000:80
     volumes:
-      - ./wp-content:/var/www/html/wp-content
+      - ./themes:/var/www/html/wp-content/themes
+      # - ./wp-content:/var/www/html/wp-content/wp-content
+      # - ./plugins:/var/www/html/wp-content/plugins
+      # - ./languages:/var/www/html/wp-content/languages
     environment:
       WORDPRESS_DB_HOST: mysql:3306
       WORDPRESS_DB_NAME: ${DB_NAME}
