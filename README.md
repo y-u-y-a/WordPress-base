@@ -36,6 +36,10 @@ $ docker-compose up -d
 $ git clone [テーマのリポジトリURL]
 ```
 
+## sassコンパイル
+```sh:
+$ sass --watch [sassファイルのパス]:[cssファイルのパス] --no-cache
+```
 ## ※テーマ解凍
 ```sh:
 $ unzip ./themes/[ファイル名].zip -d ./themes/
