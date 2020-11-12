@@ -24,13 +24,17 @@ WORDPRESS_CONTAINER_NAME=[サーバーコンテナ名]
 DB_NAME=[データベース名]
 ```
 
-
-## 3. WordPress構築
-### 起動(localhost:8000)
+## 3. WordPress起動(localhost:8000)
 ```sh:
 $ docker-compose up -d
 ```
-### テーマ解凍
+
+## 4. 開発時はgitで管理されたテーマを/themesにクローン
+```sh:
+$ git clone [テーマのリポジトリURL]
+```
+
+## ※テーマ解凍
 ```sh:
 $ unzip ./wp-content/themes/[ファイル名].zip -d ./wp-content/themes/
 ```
