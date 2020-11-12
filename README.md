@@ -22,6 +22,8 @@ $ cp .env.example .env
 MYSQL_CONTAINER_NAME=[MySQLコンテナ名]
 WORDPRESS_CONTAINER_NAME=[サーバーコンテナ名]
 DB_NAME=[データベース名]
+LOCAL_THEME_PATH=[ローカル側のテーマのパス]
+THEME_NAME=[テーマ名]
 ```
 
 ## 3. WordPress起動(localhost:8000)

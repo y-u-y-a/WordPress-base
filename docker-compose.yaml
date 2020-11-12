@@ -25,8 +25,9 @@ services:
     ports:
       - 8000:80
     volumes:
-      - ./themes:/var/www/html/wp-content/themes
+      - ${LOCAL_THEME_PATH}:/var/www/html/wp-content/themes/${THEME_NAME}
       # - ./wp-content:/var/www/html/wp-content/wp-content
+      # - ./themes:/var/www/html/wp-content/themes
       # - ./plugins:/var/www/html/wp-content/plugins
       # - ./languages:/var/www/html/wp-content/languages
     environment:
