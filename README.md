@@ -9,3 +9,6 @@ $ git clone https://github.com/y-u-y-a/WordPress-base.git
 ```sh:
 $ docker-compose up -d
 ```
+
+## 3. 使用プラグイン(インストール必須)
+- Advanced Custom Fields(カスタムフィールド作成・登録)
