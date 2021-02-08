@@ -108,7 +108,7 @@ msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:93 template-parts/content-page.php:52
+#: inc/template-tags.php:93 templates/content-page.php:52
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
@@ -124,35 +124,35 @@ msgctxt "placeholder"
 msgid "Search this website &hellip;"
 msgstr ""
 
-#: template-parts/content-none.php:14
+#: templates/content-none.php:14
 msgid "Oops! We Found Nothing"
 msgstr ""
 
 #. translators: 1: link to WP admin new post page.
-#: template-parts/content-none.php:24
+#: templates/content-none.php:24
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: template-parts/content-none.php:37
+#: templates/content-none.php:37
 msgid ""
 "You can use the search form below to search for any other topic or keyword."
 msgstr ""
 
-#: template-parts/content-none.php:44
+#: templates/content-none.php:44
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:38 template-parts/content-search.php:69
-#: template-parts/content.php:87
+#: templates/content-page.php:38 templates/content-search.php:69
+#: templates/content.php:87
 msgid "Pages:"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content-search.php:54 template-parts/content.php:72
+#: templates/content-search.php:54 templates/content.php:72
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
