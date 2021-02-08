@@ -5,6 +5,7 @@ themes/*
 !themes/index.php
 !*.zip
 !simple/
+!*-child/
 
 # アップロードファイル関係
 wp-content/uploads/*
