@@ -21,6 +21,7 @@ services:
     ports:
       - 8000:80
     volumes:
+      - ./.plugins/advanced-custom-fields:/var/www/html/wp-content/plugins/advanced-custom-fields ## 要変更
       - ./.themes/the-blank:/var/www/html/wp-content/themes/the-blank ## 要変更
       - ./the-blank-child:/var/www/html/wp-content/themes/the-blank-child ## 要変更
     env_file: .env
