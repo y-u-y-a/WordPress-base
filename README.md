@@ -11,21 +11,6 @@ $ cd [プロジェクト名]
 $ rm -rf .git
 ```
 
-## 2. .env
-### 作成
-```sh:
-$ cd [プロジェクト名]
-$ cp .env.example .env
-```
-### 編集
-```sh:
-MYSQL_CONTAINER_NAME=[MySQLコンテナ名]
-WORDPRESS_CONTAINER_NAME=[サーバーコンテナ名]
-DB_NAME=[データベース名]
-LOCAL_THEME_PATH=[ローカル側のテーマのパス]
-THEME_NAME=[テーマ名]
-```
-
 ## 3. WordPress起動(localhost:8000)
 ```sh:
 $ docker-compose up -d
@@ -34,18 +19,4 @@ $ docker-compose up -d
 ## 4. 開発時はgitで管理されたテーマを/themesにクローン
 ```sh:
 $ git clone [テーマのリポジトリURL]
-```
-
-## sassコンパイル
-```sh:
-$ sass --watch [sassファイルのパス]:[cssファイルのパス] --no-cache
-```
-## ※テーマ解凍
-```sh:
-$ unzip ./themes/[ファイル名].zip -d ./themes/
-```
-## 案件ごとにテーマディレクトリのシンボリックを貼る
-制作テーマのディレクトリで実行を想定
-```sh:
-$ ln -s $PWD [このリポジトリの存在パス]
 ```
